@@ -1,10 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../assets/css/TinderCards.css';
 
+
+// import first from '../assets/images/dd1.png';
+
 const TinderCards = () => {
+  const [people, setPeople] = useState([
+    {
+      name: 'Daniel Larbi Addo',
+      url: 'https://via.placeholder.com/150',
+    }
+  ]);
+
   return(
     <div className="tinderCards">
-      <h1>I am TinderCards</h1>
+      {people.map(person => {
+        <h1>{person.name}</h1>
+      })}
     </div>
   )
 }
