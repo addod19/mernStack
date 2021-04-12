@@ -1,0 +1,4 @@
+{
+  "mongoURI":
+  "mongodb+srv://shop-user:shopuser1234@cluster0.10xhk.mongodb.net/eshop?retryWrites=true&w=majority"
+}
