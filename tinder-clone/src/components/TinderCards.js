@@ -1,38 +1,27 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../assets/css/TinderCards.css';
 
 import TinderCard from 'react-tinder-card';
+import axios from '../axios';
 
 
-import first from '../assets/images/dd1.png';
-import second from '../assets/images/dd2.png';
-import third from '../assets/images/dd3.png';
-import forth from '../assets/images/dd4.png';
-import fifth from '../assets/images/dd5.png';
+// import first from '../assets/images/dd1.png';
+// import second from '../assets/images/dd2.png';
+// import third from '../assets/images/dd3.png';
+// import forth from '../assets/images/dd4.png';
+// import fifth from '../assets/images/dd5.png';
 
 const TinderCards = () => {
-  const [people, setPeople] = useState([
-    {
-      name: 'Daniel Larbi Addo',
-      url: `${fifth}`,
-    },
-    {
-      name: 'Forison Boakye Addo',
-      url: `${second}`,
-    },
-    {
-      name: 'Daniel Larbi Addo',
-      url: `${third}`,
-    },
-    {
-      name: 'Daniel Larbi Addo',
-      url: `${forth}`,
-    },
-    {
-      name: 'Daniel Larbi Addo',
-      url: `${first}`,
+  const [people, setPeople] = useState([]);
+  useEffect(() => {
+    const fetchData = async () => {
+      const req = await axios.get('/tinder/cards');
+
+      setPeople(req.data);
     }
-  ]);
+
+    fetchData();
+  }, [])
 
   const swiped = (direction, nameToDelete) => {
     console.log("removing" + nameToDelete);
