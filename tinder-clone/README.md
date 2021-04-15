@@ -17,4 +17,4 @@ This project is inspired by the need and importance of adding the MERN Stack TEC
 
 ## Live Version
 
-[tinder-clone](https://tinder-clone-81ef7.web.ap)
+[tinder-clone](https://tinder-clone-81ef7.firebaseapp.com/)
