@@ -20,7 +20,7 @@ app.use(Cors());
 app.get('/', (req, res) => res.status(200).send('Hello world!!'));
 
 app.post('/tinder/cards', (req, res) => {
-    const dbCard = res.body;
+    const dbCard = req.body;
 
     Cards.create(dbCard, (error, data) => {
         if(error) {
@@ -28,12 +28,12 @@ app.post('/tinder/cards', (req, res) => {
         }
         else {
             res.status(201).send(`Created data: ${data}`);
+            console.log(data);
         }
     })
 })
 
 app.get('/tinder/cards', (req, res) => {
-    const dbCard = res.body;
     
     Cards.find((error, data) => {
         console.log(data);

@@ -5,24 +5,19 @@ import TinderCard from 'react-tinder-card';
 import axios from '../axios';
 
 
-// import first from '../assets/images/dd1.png';
-// import second from '../assets/images/dd2.png';
-// import third from '../assets/images/dd3.png';
-// import forth from '../assets/images/dd4.png';
-// import fifth from '../assets/images/dd5.png';
-
 const TinderCards = () => {
   const [people, setPeople] = useState([]);
   useEffect(() => {
     const fetchData = async () => {
       const req = await axios.get('/tinder/cards');
-
+      console.log(req);
       setPeople(req.data);
     }
 
     fetchData();
   }, [])
 
+  console.log(people);
   const swiped = (direction, nameToDelete) => {
     console.log("removing" + nameToDelete);
     // setLastDirection(direction);
@@ -53,8 +48,6 @@ const TinderCards = () => {
                 <h3>{person.name}</h3>
               </div>
             </TinderCard>
-            {/* <h1>{person.name}</h1>
-            <img src={person.url} alt="first" /> */}
           </div>
         ) 
       })}
