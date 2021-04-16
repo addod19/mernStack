@@ -11,3 +11,43 @@
     width: 100%;
     height: 100%;
 }
+
+.videoFooter__record {
+    animation: spinTheRecord infinite 5s linear;
+    width: 50px;
+    height: 50px;
+    filter: invert(1);
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+    border-radius: 50%;
+}
+/* 
+.ticker {
+    position: relative;
+    bottom: 20px;
+} */
+
+.videoFooter__icon {
+    position: absolute;
+}
+
+
+.videoFooter__ticker .ticker {
+    height: fit-content;
+    margin-left: 30px;
+    width: 60%;
+}
+
+.videoFooter__ticker h1 {
+    padding-top: 7px;
+}
+
+@keyframes spinTheRecord {
+    from {
+        transform: rotate(0deg)
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
