@@ -3,6 +3,9 @@ import '../assets/css/Videos.css';
 
 import one from '../assets/videos/one.mp4';
 
+import VideoFooter from './VideoFooter';
+
+
 const Video = () => {
   const [playing, setPlaying] = useState(false);
   const videoRef = useRef(null);
@@ -27,7 +30,7 @@ const Video = () => {
       {/* ref={videoRef} */}
       {/* key={Math.random() * 100} */}
       </video>
-      {/* VideoFooter */}
+      <VideoFooter />
       {/* VideoSideBar */}
     </div>
   )
