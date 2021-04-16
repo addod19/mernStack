@@ -6,19 +6,19 @@ import Ticker from 'react-ticker';
 
 import VideoImage from '../assets/images/dd4.png';
 
-const VideoFooter = () => {
+const VideoFooter = ({ channel, description, song }) => {
   return(
     <div className="videoFooter">
       <div className="video__footer_text">
-        <h3>@nanakwame</h3>
-        <p>This is my first day outside the womb</p>
+        <h3>@{channel}</h3>
+        <p>{description}</p>
         <div className="videoFooter__ticker">
           <MusicNoteIcon className="videoFooter__icon" />
           <Ticker mode="smooth" className="ticker">
             {
               ({ index }) => (
                 <>
-                  <p>Singing lullaby!!!</p>
+                  <p>{song}</p>
                 </>
               )
             }

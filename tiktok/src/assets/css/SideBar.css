@@ -1,0 +1,11 @@
+.video__side__bar {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    color: white;
+}
+
+.videoSideBar__butoon {
+    padding: 20px;
+    align-items: center;
+}
