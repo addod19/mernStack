@@ -1,21 +1,17 @@
-import SideBar from './components/SideBar';
-import Videos from './components/Videos';
-import Footer from './components/Footer';
+// import SideBar from './components/SideBar';
+import Video from './components/Video';
+// import Footer from './components/Footer';
 
 import './App.css';
+
 
 const App = () => {
   return (
     <div className="app">
-     {/* SideBar */}
-     <SideBar />
-     {/* Videos */}
-     <Videos />
-     {/* video */}
-     {/* video */}
-     {/* video */}
-     {/* Footer */}
-     <Footer />
+    <section className="app__videos">
+      <Video />
+      <Video />
+    </section>
     </div>
   );
 }
