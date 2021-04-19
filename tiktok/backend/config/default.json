@@ -1,0 +1,4 @@
+{
+    "connection_url":
+    "mongodb+srv://tiktokadmin:admin2021@cluster0.guwkd.mongodb.net/tiktok?retryWrites=true&w=majority"
+}
