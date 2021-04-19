@@ -12,6 +12,8 @@ import ProfileAvatar from './assets/kro.jpg';
 import SettingsIcon from '@material-ui/icons/Settings';
 import Statistics from './components/Statistics';
 
+import Links from './components/Links';
+
 function App() {
   return (
     <div className="app">
@@ -59,10 +61,11 @@ function App() {
             @<a href="microverse.org">Microverse</a>
           </p>
           {/* link */}
-          <a href="daniellarbiaddo.com">daniellarbiaddo.com</a>
+          <a href="daniellarbiaddo.com" target="__blank">daniellarbiaddo.com</a>
       </div>
     </section>
     <Statistics />
+    <Links />
     <Post />
     </div>
   );
