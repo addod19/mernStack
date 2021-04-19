@@ -1,0 +1,35 @@
+.app__links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5vh;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 1vh;
+    object-fit: contain;
+    border: 1px solid black;
+}
+.app__links__posts {
+    width: 10%;
+    position: relative;
+    left: .3rem;
+}
+
+.app__links__posts,
+.app__links__saved,
+.app__links__igtv,
+.app__links__tagged {
+    list-style: none;
+}
+.app__links__tagged {
+    position: relative;
+    right: .4rem;
+}
+
+.app__links_posts_link,
+.app__links_igtv_link,
+.app__links_saved_link,
+.app__links_tagged_link {
+    list-style: none;
+    color: grey;
+}

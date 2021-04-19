@@ -12,21 +12,37 @@ import IGTV from '../pages/IGTV';
 import Tagged from '../pages/Tagged';
 import Saved from '../pages/Saved';
 
+import '../assets/css/Links.css';
+
+// import LabelImportantIcon from '@material-ui/icons/LabelImportant';
+import BookmarkBorderIcon from '@material-ui/icons/BookmarkBorder';
+import PostAddIcon from '@material-ui/icons/PostAdd';
+import LiveTvIcon from '@material-ui/icons/LiveTv';
+import PersonOutlineIcon from '@material-ui/icons/PersonOutline';
+
 const Links = () => {
   return(
     <Router>
-      <ul>
-        <li>
-          <Link to="posts">Posts</Link>
+      <ul className="app__links">
+        <li className="app__links__posts">
+          <Link to="posts" className="app__links_posts_link">
+            <PostAddIcon />
+          </Link>
         </li>
-        <li>
-          <Link to="igtv">IGTV</Link>
+        <li className="app__links__igtv">
+          <Link to="igtv" className="app__links_igtv_link">
+            <LiveTvIcon />
+          </Link>
         </li>
-        <li>
-          <Link to="saved">Saved</Link>
+        <li className="app__links__saved">
+          <Link to="saved" className="app__links_saved_link">
+            <BookmarkBorderIcon fontSize="large" />
+          </Link>
         </li>
-        <li>
-          <Link to="/tagged">Tagged</Link>
+        <li className="app__links__tagged">
+          <Link to="/tagged" className="app__links_tagged_link">
+            <PersonOutlineIcon />
+          </Link>
         </li>
       </ul>
       
