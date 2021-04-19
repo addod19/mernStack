@@ -2,6 +2,23 @@
   background: white;
 }
 
+.app__header,
+.app__icons {
+  display: flex;
+  align-items: center;
+}
+
+.app__header {
+  justify-content: space-between;
+}
+
+.home__icon,
+.message__icon,
+.explore__icon,
+.favorite__icon,
+.avatar__icon {
+  padding: 0.4rem;
+}
 .app__header__logo {
   border-bottom: 1px solid gray;
 }

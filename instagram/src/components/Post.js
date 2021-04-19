@@ -7,11 +7,9 @@ import '../assets/css/Post.css'
 const Post = () => {
   return(
     <div className="post">
-      <h1>Posts page</h1>
       {/* header => avatar => username */}
       <section className="post__header">
         {/* avatar */}
-        <h3>Avatar</h3>
         <Avatar
           className="post__avatar"
           alt="username"
@@ -28,7 +26,7 @@ const Post = () => {
           alt="dummy image"
         />
       </section>
-      <section className="name__and__caption">
+      <section className="post__text">
         {/* username => caption */}
         <h2 className="post__author">Daniel: </h2><h4 className="post__text">Cloning instagram</h4>
       </section>
