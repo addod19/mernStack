@@ -1,0 +1,7 @@
+.app {
+  background: white;
+}
+
+.app__header__logo {
+  border-bottom: 1px solid gray;
+}

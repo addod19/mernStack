@@ -1,0 +1,8 @@
+.post {
+
+}
+
+.avatar__img {
+    width: 100%;
+    object-fit: contain;
+}
