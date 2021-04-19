@@ -1,0 +1,24 @@
+.profile__stats {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid grey;
+}
+.profile__stats__post,
+.profile__stats__followers {
+    margin-left: 1.2rem;
+}
+
+.profile__stats__followers,
+.profile__stats__post,
+.profile__stats__following {
+    text-align: center;
+}
+
+.profile__stats__followers h3,
+.profile__stats__post h3,
+.profile__stats__following h3{
+    color: grey;
+}

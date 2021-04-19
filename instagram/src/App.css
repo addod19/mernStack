@@ -10,6 +10,7 @@
 
 .app__header {
   justify-content: space-between;
+  border-bottom: 1px solid grey;
 }
 
 .home__icon,
@@ -18,7 +19,58 @@
 .favorite__icon,
 .avatar__icon {
   padding: 0.4rem;
+  background-color: white;
+}
+
+.avatar__icon {
+  border-radius: 40%;
 }
 .app__header__logo {
   border-bottom: 1px solid gray;
+}
+.profile__desc {
+  border-bottom: 1px solid grey;
+  height: 14rem;
+}
+.profile__desc__row1 {
+  width: 100%;
+  height: 8rem;
+  display: flex;
+}
+
+.profile__desc__avatar {
+  padding: 1em;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.profile__desc__edit h3 {
+  padding: 1.5em;
+}
+.settings {
+  padding: 1.2rem;
+}
+.inner_row {
+  display: flex;
+}
+
+.edit__button {
+  width: 250px;
+  height: 30px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+}
+
+.edit__button a {
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  position: relative;
+  left: 35%;
+  font-weight: bolder;
+}
+a {
+  text-decoration: none;
 }
