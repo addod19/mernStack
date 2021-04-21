@@ -1,0 +1,15 @@
+.tagged {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.tagged_never__give__up,
+.tagged_barbar {
+    width: 8em;
+}
+
+.tagged_nvu__img,
+.tagged_barbar__img {
+    width: 100%;
+    border: 1px solid black;
+}
