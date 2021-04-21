@@ -1,0 +1,25 @@
+.igtv {
+    width: 100%;
+    display: block;
+    margin-bottom: 8vh;
+}
+
+.igtv_never__give__up,
+.igtv__barbar,
+.igtv_ym,
+.igtv_patrik,
+.igtv_coconut,
+.igtv_prof {
+    width: 100%;
+}
+
+.igtv_nvu__img,
+.igtv_prof_image,
+.igtv_coconut__img,
+.igtv_patrik__img,
+.igtv_ym__img,
+.igtv_barbar__img {
+    width: 100%;
+    height: 18rem;
+    object-fit: cover;
+}

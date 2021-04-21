@@ -1,0 +1,13 @@
+.saved {
+    width: 100%;
+    display: flex;
+    margin-top: 2vh;
+}
+
+.saved__barbar {
+    width: 8rem;
+}
+
+.saved_barbar__img {
+    width: 100%;
+}
