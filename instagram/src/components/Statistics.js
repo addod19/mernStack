@@ -1,6 +1,6 @@
 import React from 'react';
 
-import '../assets/css/stats.css';
+import '../assets/css/Stats.css';
 
 const Statistics = () => {
   return(

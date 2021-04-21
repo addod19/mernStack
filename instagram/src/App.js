@@ -1,6 +1,6 @@
 import './App.css';
 
-import Post from './components/Post';
+// import Post from './components/Post';
 
 import HomeIcon from '@material-ui/icons/Home';
 import OfflineBoltIcon from '@material-ui/icons/OfflineBolt';
@@ -13,6 +13,7 @@ import SettingsIcon from '@material-ui/icons/Settings';
 import Statistics from './components/Statistics';
 
 import Links from './components/Links';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -20,7 +21,7 @@ function App() {
       <div className="app__header">
         <img
         className="app__header__logo"
-        src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png" className="App-logo" alt="logo" />
+        src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png" alt="logo" />
       
         <div className="app__icons">
           <HomeIcon fontSize="large" className="home__icon" />
@@ -48,7 +49,7 @@ function App() {
             <SettingsIcon fontSize="large" className="settings" />
           </div>
           <div className="edit__button">
-            <a href="#">Edit Profile</a>
+            <a href="/edit__profile">Edit Profile</a>
           </div>
         </div>
       </div>
@@ -66,7 +67,8 @@ function App() {
     </section>
     <Statistics />
     <Links />
-    <Post />
+    {/* <Post /> */}
+    <Footer />
     </div>
   );
 }

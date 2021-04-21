@@ -26,7 +26,7 @@
   border-radius: 40%;
 }
 .app__header__logo {
-  border-bottom: 1px solid gray;
+  /* border-bottom: 1px solid gray; */
 }
 .profile__desc {
   border-bottom: 1px solid grey;

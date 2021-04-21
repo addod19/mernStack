@@ -1,0 +1,22 @@
+.posts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.post_never__give__up,
+.post_ym,
+.post_patrik,
+.post_coconut,
+.post__barbar,
+.post_prof {
+    width: 8em;
+}
+
+.post_nvu__img,
+.post_barbar__img,
+.post_ym__img,
+.post_patrik__img,
+.post_coconut__img,
+.post_prof_image {
+    width: 100%;
+}
